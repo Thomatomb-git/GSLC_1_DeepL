@@ -1,0 +1,57 @@
+[
+    {
+        "Kode": "B1",
+        "Kondisi": "Baseline from Scratch",
+        "Backbone": "ResNet-18",
+        "Trainable_Params": 11181642,
+        "Learning_Rate": "1e-3",
+        "Epoch_Konvergen": 12,
+        "Durasi_Detik": 113.87,
+        "Val_Accuracy": 0.4478,
+        "Test_Macro_F1": 0.4309
+    },
+    {
+        "Kode": "B2",
+        "Kondisi": "Feature Extraction",
+        "Backbone": "ResNet-18",
+        "Trainable_Params": 5130,
+        "Learning_Rate": "1e-3 (fc)",
+        "Epoch_Konvergen": 25,
+        "Durasi_Detik": 190.95,
+        "Val_Accuracy": 0.9764,
+        "Test_Macro_F1": 0.963
+    },
+    {
+        "Kode": "B3",
+        "Kondisi": "Progressive Fine-Tuning",
+        "Backbone": "ResNet-18",
+        "Trainable_Params": 8398858,
+        "Learning_Rate": "layer4=1e-4, fc=1e-3",
+        "Epoch_Konvergen": 6,
+        "Durasi_Detik": 46.65,
+        "Val_Accuracy": 0.9697,
+        "Test_Macro_F1": 0.9628
+    },
+    {
+        "Kode": "B4",
+        "Kondisi": "Fine-Tuning Tanpa Augmentasi",
+        "Backbone": "ResNet-18",
+        "Trainable_Params": 8398858,
+        "Learning_Rate": "layer4=1e-4, fc=1e-3",
+        "Epoch_Konvergen": 16,
+        "Durasi_Detik": 95.49,
+        "Val_Accuracy": 0.9832,
+        "Test_Macro_F1": 0.9763
+    },
+    {
+        "Kode": "B5",
+        "Kondisi": "Arsitektur Efisien (Bonus)",
+        "Backbone": "EfficientNet-B0",
+        "Trainable_Params": 424970,
+        "Learning_Rate": "feat[8]=1e-4, clf=1e-3",
+        "Epoch_Konvergen": 25,
+        "Durasi_Detik": 195.86,
+        "Val_Accuracy": 0.9899,
+        "Test_Macro_F1": 0.956
+    }
+]

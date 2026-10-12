@@ -1,0 +1,10 @@
+gymnasium
+ipykernel
+matplotlib
+numpy
+pandas
+seaborn
+scikit-learn
+tensorflow
+tensorflow-datasets
+transformers

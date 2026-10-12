@@ -1,0 +1,6 @@
+Kode,Kondisi,Backbone,Trainable_Params,Learning_Rate,Epoch_Konvergen,Durasi_Detik,Val_Accuracy,Test_Macro_F1
+B1,Baseline from Scratch,ResNet-18,11181642,1e-3,12,113.87,0.4478,0.4309
+B2,Feature Extraction,ResNet-18,5130,1e-3 (fc),25,190.95,0.9764,0.963
+B3,Progressive Fine-Tuning,ResNet-18,8398858,"layer4=1e-4, fc=1e-3",6,46.65,0.9697,0.9628
+B4,Fine-Tuning Tanpa Augmentasi,ResNet-18,8398858,"layer4=1e-4, fc=1e-3",16,95.49,0.9832,0.9763
+B5,Arsitektur Efisien (Bonus),EfficientNet-B0,424970,"feat[8]=1e-4, clf=1e-3",25,195.86,0.9899,0.956

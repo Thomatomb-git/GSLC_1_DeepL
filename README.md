@@ -1,5 +1,7 @@
 # **Tugas GSLC 1 Deep Learning**
 
+https://github.com/Thomatomb-git/GSLC_1_DeepL
+
 Notes:
 
 * Jawaban bagian A berada di `BagianA.md`
